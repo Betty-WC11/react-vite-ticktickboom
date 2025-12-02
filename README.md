@@ -12,6 +12,10 @@ Stop the Bomb! is an interactive guessing game built as a learning project to pr
 Clean, responsive tile layout <br>
 Reusable React components
 
+UI Design for the game <br>
+
+![stop the bomb design](./src/assets/project-design-figma.png)
+
 ## Getting Started
 
 **Prerequisites**
