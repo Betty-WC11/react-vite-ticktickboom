@@ -2,17 +2,17 @@
 
 A React-based guessing game where players have to guess the correct number among 100 tiles to stop the bomb from exploding.
 
-## 🎮 About the Game
+## About the Game
 
 Stop the Bomb! is an interactive guessing game built as a learning project to practice React fundamentals and component based architecture.
 
-## ✨ Current Features
+## Current Features
 
 10x10 grid of numbered tiles (1-100) <br>
 Clean, responsive tile layout <br>
 Reusable React components
 
-## 🚀 Getting Started
+## Getting Started
 
 **Prerequisites**
 
@@ -48,21 +48,21 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:5173`
 
-## 🛠️ Built With
+## Built With
 
 - React
 - JavaScript / TypeScript
 - CSS
 - Vite
 
-## 📚 What I'm Learning
+## What I'm Learning
 
 - React component structure and props
 - Array methods `(.map(), .push())`
 - CSS Grid layout
 - State management (coming soon!)
 
-## 🎯 Roadmap / Future Features
+## Roadmap / Future Features
 
 - Click functionality for tiles
 - Game logic for finding the bomb
