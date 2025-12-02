@@ -1,6 +1,6 @@
 # Stop the Bomb! 💣
 
-A React-based guessing game where players have to guess the correct number among 100 tiles to stop the bomb from exploding.
+The game is still in progress, however it is a React-based guessing game where players have to guess the correct number among 100 tiles to stop the bomb from exploding.
 
 ## About the Game
 
