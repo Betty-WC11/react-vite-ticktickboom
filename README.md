@@ -59,18 +59,9 @@ npm run dev
 - CSS
 - Vite
 
-## What I'm Learning
-
-- React component structure and props
-- Array methods `(.map(), .push())`
-- CSS Grid layout
-- State management (coming soon!)
-
 ## Roadmap / Future Features
 
 - Click functionality for tiles
-- Game logic for finding the bomb
-- Score tracking
-- Timer/countdown feature
-- Opponent AI
+- Game logic for guessing the correct number
+- Tracking no. of attempts
 - Win/lose conditions
