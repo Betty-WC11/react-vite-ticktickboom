@@ -10,28 +10,53 @@ function App() {
   );
   console.log(randomNumber);
 
-  const [attempts, setAttempts] = useState(3);
-  // const [ gameWon, setGameWon ] = useState();
-  // const [ gameLost, setGameLost ] = useState();
+  // for the 1-100 tiles
+  const [allTiles, setAllTiles] = useState(() => {
+    const tiles = [];
+    for (let i = 1; i < 101; i++) {
+      tiles.push(i);
+    }
+    return tiles;
+  });
 
-  const handleOnClick = (clickedNumber) => {
-    return clickedNumber === randomNumber
-      ? console.log("You Win!")
-      : setAttempts(attempts - 1);
+  // game status, status
+
+  // have one state to handle a win / lose state e.g. const [gameStatus, setGameStatus] = [""]
+  //  a. if game is won, setGameStatus will be true and therefore render win component.
+  //  b. if game is lost, setGameStatus wiil be false and therefore render lose component.
+  // 1. check if attempts is > 0, game over, render lose component, disable buttons.
+  // 2. check is equal to random number, render win component and not game page.
+  // check less than random number.
+  // check is more than random number.
+
+  const [attempts, setAttempts] = useState(3);
+
+  const guessResult = (num) => {
+    if (num !== randomNumber && num >= randomNumber) {
+      setAllTiles(allTiles.filter((value) => value < num));
+      setAttempts(attempts - 1);
+    } else if (num !== randomNumber && num <= randomNumber) {
+      setAllTiles(allTiles.filter((value) => value > num));
+      setAttempts(attempts - 1);
+    } else {
+      console.log("you win!");
+    }
   };
 
-  // for the 1-100 tiles
-  const tiles = [];
-  for (let i = 1; i < 101; i++) {
-    tiles.push(i);
-  }
+  const anotherTest = () => {
+    return console.log("goodbye world");
+  };
+
+  const handleOnClick = (clickedNumber) => {
+    guessResult(clickedNumber);
+  };
 
   return (
     <>
       <Header />
       <h3> Attempts remaining: {attempts} </h3>
       <div className="numberTiles">
-        {tiles.map((number) => {
+        {allTiles.map((number) => {
           return (
             <NumberTile
               num={number}
