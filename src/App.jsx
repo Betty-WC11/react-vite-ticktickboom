@@ -67,7 +67,7 @@ function App() {
   return (
     <>
       <Header />
-      <h3 className="attempts-text"> Attempts remaining: {attempts} </h3>
+      <h3 className="attempts-text">YOU HAVE - {attempts} - ATTEMPTS</h3>
       <img src={bomb} alt="bomb-picture" className="bomb-picture" />
       <div className="numberTiles">
         {allTiles.map((number) => {

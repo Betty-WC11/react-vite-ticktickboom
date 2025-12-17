@@ -2,15 +2,22 @@
   background-color: rgb(53, 53, 90);
   /* margin: 0px 0px 50px 0; */
   padding: 40px 0 40px 0;
+  max-width: 50rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.448);
+  border-radius: 10px;
+  /* box-shadow: 5px 5px rgba(240, 242, 248, 0.935); */
+  /* border: 5px solid #ffffffe0; */
 }
 
 .title {
   font-size: 3rem;
   color: rgb(255, 255, 255);
   margin: 0;
+  /* text-shadow: 1.5px 1.5px rgb(153, 211, 249); */
 }
 
 .header-text {
   color: rgb(255, 252, 252);
   font-size: 1.5rem;
+  /* text-shadow: 1px 1px rgb(153, 211, 249); */
 }
