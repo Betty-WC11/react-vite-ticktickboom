@@ -18,13 +18,22 @@ function App() {
   console.log(randomNumber);
 
   // for the 1-100 tiles
-  const [allTiles, setAllTiles] = useState(() => {
+  const tilesArray = () => {
     const tiles = [];
     for (let i = 1; i < 101; i++) {
       tiles.push(i);
     }
     return tiles;
-  });
+  };
+
+  const [allTiles, setAllTiles] = useState(tilesArray());
+
+  const resetGame = () => {
+    setGameStatus("playing");
+    setAllTiles(tilesArray());
+    setAttempts(5);
+    setRandomNumber(Math.floor(Math.random() * 100 + 1));
+  };
 
   const guessResult = (num) => {
     if (num === randomNumber) {
@@ -51,7 +60,7 @@ function App() {
     return (
       <>
         <Header />
-        <WinPage answer={randomNumber} />
+        <WinPage answer={randomNumber} resetGame={resetGame} />
       </>
     );
   }
@@ -60,7 +69,7 @@ function App() {
     return (
       <>
         <Header />
-        <LosePage answer={randomNumber} />
+        <LosePage answer={randomNumber} resetGame={resetGame} />
       </>
     );
   }

@@ -1,4 +1,5 @@
 import boom from "../assets/boom.png";
+import App from "../App";
 import "./LosePage.css";
 
 function LosePage(props) {
@@ -13,6 +14,9 @@ function LosePage(props) {
       <div className="boom-pic">
         <img src={boom} alt="boom" className="boom" />
       </div>
+      <button className="loseResetButton" onClick={props.resetGame}>
+        PLAY AGAIN!
+      </button>
     </>
   );
 }

@@ -14,6 +14,9 @@ function WinPage(props) {
       <div className="bomb-man-box">
         <img src={bombMan} alt="bomb-man" className="bomb-man" />
       </div>
+      <button className="winResetButton" onClick={props.resetGame}>
+        PLAY AGAIN!
+      </button>
     </>
   );
 }
