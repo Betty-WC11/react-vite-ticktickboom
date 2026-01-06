@@ -1,24 +1,18 @@
-# Stop the Bomb! 💣
+# Tick...Tick...Boom! 💣
 
-The game is still in progress, however it is a React-based guessing game where players have to guess the correct number among 100 tiles to stop the bomb from exploding.
+The game is a React-based guessing game where the player has to guess the correct number among 100 tiles to stop the bomb from exploding.
 
 ## About the Game
 
-Stop the Bomb! is an interactive guessing game built as a learning project to practice React fundamentals and component based architecture.
+Tick...Tick...Boom! is an interactive guessing game built as a learning project to practice React fundamentals and component based architecture.
 
-## Current Features
-
-10x10 grid of numbered tiles (1-100) <br>
-Clean, responsive tile layout <br>
-Reusable React components
-
-UI Design for the game <br>
+Prior to building, I created a UI Design for the game. After the build it turned out slightly different to the initial design, however the design worked really well as a guideline. <br>
 
 ![stop the bomb design](./src/assets/project-design-figma.png)
 
 ## Getting Started
 
-**Prerequisites**
+To start please make sure you have:
 
 - Node.js installed on your machine
 - npm or yarn package manager
@@ -54,14 +48,6 @@ npm run dev
 
 ## Built With
 
-- React
-- JavaScript / TypeScript
+- React Vite
+- JavaScript
 - CSS
-- Vite
-
-## Roadmap / Future Features
-
-- Click functionality for tiles
-- Game logic for guessing the correct number
-- Tracking no. of attempts
-- Win/lose conditions
