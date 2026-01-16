@@ -24,9 +24,9 @@ To start please make sure you have:
 ```
 bash
 
-git clone https://github.com/Betty-WC11/React-Vite-Typescript-Number_Guessing_Game.git
+git clone https://github.com/Betty-WC11/react-vite-ticktickboom.git
 
-cd React-Vite-Typescript-Number_Guessing_Game
+cd react-vite-ticktickboom
 ```
 
 2. Install dependencies
@@ -50,4 +50,4 @@ npm run dev
 
 - React Vite
 - JavaScript
-- CSS
+- HTML + CSS
