@@ -13,7 +13,7 @@ function App() {
   // randomising the number for user to guess
   const [randomNumber, setRandomNumber] = useState(() =>
     // add 1 on the end will include 100
-    Math.floor(Math.random() * 100 + 1)
+    Math.floor(Math.random() * 100 + 1),
   );
   console.log(randomNumber);
 
