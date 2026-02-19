@@ -3,7 +3,7 @@
 }
 
 .win-answer-container {
-  width: 50rem;
+  /* width: 50rem; */
   display: flex;
   justify-content: center;
 }
