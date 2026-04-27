@@ -12,7 +12,7 @@
 
 @media (min-width: 640px) {
   .numberTiles {
-    grid-template-columns: repeat(5, minmax(8px, 1fr));
+    grid-template-columns: repeat(10, minmax(8px, 1fr));
   }
 
   .attempts-text {

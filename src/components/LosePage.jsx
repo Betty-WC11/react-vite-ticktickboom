@@ -5,8 +5,8 @@ import "./LosePage.css";
 function LosePage(props) {
   return (
     <>
-      {/* <h1 className="you-lose">You Lose!</h1> */}
-      <p className="lose-text">The correct number was...</p>
+      <h1 className="you-lose">YOU LOSE!</h1>
+      <p className="lose-text">Correct number is...</p>
       <div className="lose-answer-container">
         <h2 className="lose-answer">{props.answer}</h2>
       </div>

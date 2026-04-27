@@ -59,7 +59,7 @@ function App() {
   if (gameStatus === "winning") {
     return (
       <>
-        <Header />
+        {/* <Header /> */}
         <WinPage answer={randomNumber} resetGame={resetGame} />
       </>
     );
@@ -68,7 +68,7 @@ function App() {
   if (gameStatus === "losing") {
     return (
       <>
-        <Header />
+        {/* <Header /> */}
         <LosePage answer={randomNumber} resetGame={resetGame} />
       </>
     );
