@@ -3,7 +3,7 @@ import Header from "./components/Header.jsx";
 import NumberTile from "./components/NumberTile.jsx";
 import { useState } from "react";
 import WinPage from "./components/WinPage.jsx";
-import bomb from "./assets/bomb.webp";
+
 import LosePage from "./components/LosePage.jsx";
 
 function App() {
@@ -78,7 +78,6 @@ function App() {
     <>
       <Header />
       <h3 className="attempts-text">YOU HAVE - {attempts} - ATTEMPTS</h3>
-      <img src={bomb} alt="bomb-picture" className="bomb-picture" />
       <div className="numberTiles">
         {allTiles.map((number) => {
           return (

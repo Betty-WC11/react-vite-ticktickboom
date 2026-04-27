@@ -1,11 +1,11 @@
 .tileNumber {
   color: white;
   margin: 7.5px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   box-shadow: 5px 5px 0px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   border-radius: 8px;
   border: 0px solid transparent;
@@ -18,4 +18,12 @@
 .tileNumber:hover {
   transform: scale(1.15);
   /* border-color: rgba(46, 58, 77, 0.136); */
+}
+
+@media (min-width: 640px) {
+  .tileNumber {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
 }

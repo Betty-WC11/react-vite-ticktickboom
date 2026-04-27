@@ -1,25 +1,18 @@
 .numberTiles {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(5, minmax(20px, 1fr));
-}
-
-.bomb-picture {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 10px;
+  gap: 5px;
+  grid-template-columns: repeat(5, minmax(8px, 1fr));
 }
 
 .attempts-text {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin: 15px 0 15px 0;
   /* text-shadow: 3px 3px rgb(205, 215, 227); */
 }
 
 @media (min-width: 640px) {
   .numberTiles {
-    grid-template-columns: repeat(7, minmax(50px, 1fr));
+    grid-template-columns: repeat(5, minmax(8px, 1fr));
   }
 
   .attempts-text {
